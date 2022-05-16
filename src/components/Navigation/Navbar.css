@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 .navbar{
-    border: 1px solid green;
-    background: grey;
+    /* border: 1px solid green; */
+    background-image: url(../images/img31.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
     color: white;
-    width: 100vw;
-    height: 80px;
+    width: 100%;
+    height: 80px;    
 }
 
 .navbar .nav-container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 90%;
     height: 100%;
     margin: auto;
@@ -23,21 +26,58 @@
 
 .navbar .nav-container .nav-logo {
     margin:0 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
+.navbar .nav-container .nav-logo img{
+    object-fit:cover;
+    margin: 10px 0;
+}
 
-.navbar .nav-container .nav-menu {
-    border: 1px solid blue;
+.navbar .nav-container .nav-menu-left ul{
+    /* border: 1px solid red; */
     display: flex;
-    text-decoration: none;
-   
-    margin: 0 10px;
-
-}
-.navbar .nav-container .nav-menu  li{
-    margin-left: 20px;
-    font-size: 1.3rem;
-    font-weight: 500;
+    align-items: center;
     list-style: none;
-}
+    margin-left: 35px;
+    /* display: none; */
+
+  }
+
+  .navbar .nav-container .nav-menu-left ul li{
+    margin-right: 24px;
+
+  }
+
+  .navbar .nav-container .nav-menu-left ul li Link{
+      text-decoration: none;
+  }
+
+  .item{
+      text-decoration: none;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      border: none;
+  }
+  .item:hover{
+      border-bottom: 2px solid #292F4A;
+  }
+  .navbar .nav-container .btn{
+      border: 1px solid white;
+      background: #292F4A;
+      padding: 12px 17px;
+      display: inline-block;
+      border-radius: 7px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      margin-right: 24px;
+      font-weight: 400;
+  }
+  .navbar .nav-container .btn:hover{
+      background: #292F4A;
+      opacity: 0.7;
+  
+  }

@@ -10,14 +10,21 @@ function Navbar() {
             <div className='nav-logo'>
                 <img src={logo} alt="logo"/>
             </div>
-                <ul className='nav-menu'>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-                </ul>
-                <div className='btn'>
-                    <a>Get in Touch</a>
+                <div className='nav-menu-left'>
+                    <ul>
+                        <li><Link className='item' to='/'>Home</Link></li>
+                        <li><Link className='item'  to='/about'>About</Link></li>
+                        <li><Link className='item'  to='/Products'>Products</Link></li>
+                        <li><Link className='item'  to='/'>Community</Link></li>
+                        <li><Link className='item' to='/contact'>Contact</Link></li>
+                    </ul>
                 </div>
+               
+                <a className='btn'>Get in Touch</a>
+                
+               
+                    
+                
         </div> 
     </div>
   )

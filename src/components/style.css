@@ -1,4 +1,167 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.homepage{
+  /* border: 1px solid red; */
+  width: 100vw;
+  width: 100%;
+  height: auto;
+  
+}
+
+.homepage .hero-container{
+    background-image: url(./images/img31.jpg);
+    max-width:100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid green; */
+}
+
+.homepage .hero-container .hero{
+    border: 1px solid red;
+   
+}
+.homepage .aboutme{
+    border: 1px solid goldenrod;
+}
+
+button{
+    background:red;
+    color:white;
+    padding: 10px 15px;
+    display: block;
+    margin-top: 16px;
+}
+
+/*Products Page*/
+.product-container{
+    border: 1px solid gray; 
+    width: 100%;  
+    padding: 10px 0;
+}
+.product-container h1{
+    width:100%;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 3.5rem;
+    color: red;
+    padding: 5px;
+}
+.product-container p{
+    font-size: 1.5rem;
+    color: gray;
+    text-align: center;
+
+}
+.cards{
+    /* border: 1px solid red; */
+    /* width: 100vw; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.cards .card-box {
+    border: 2px solid orangered;
+    width: 250px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+.cards .card-box .card-image{
+    width: 246px;
+    height: 210px;
+    margin: 0 auto;
+
+}
+.cards .card-box .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    cursor: pointer;
+  
+}
+.cards .card-box img:hover{
+    opacity: 0.7;
+}
+
+.cards .card-box  .card-content{
+    /* border: 1px solid green; */
+    margin-top: 10px;
+    text-align: right;
+    position: relative;
+    top: 3px;
+}
+
+.cards .card-box .card-content p{
+    text-align: left;
+    font-size: 1.0rem;
+    color: black;
+    line-height: 1.4;
+}
+
+.cards .card-box .card-content .pricecolor{
+    color: red;
+}
+
+/*Product Details*/
+.card-detail{
+    border: 1px solid black;
+    width: 100%;
+    display:flex;   
+}
+
+.card-detail-image {
+    width: 350px;
+    height: 350px;
+    border: 1px solid red;
+    margin: 2.5rem 1rem;
+}
+.card-detail-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.card-detail .card-detail-content{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;  
+}
+.card-detail .card-detail-content h1{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.card-detail .card-detail-content p{
+    font-size: 1.0rem;
+    color: red;
+    font-weight: 400;  
+}
+
+.box{
+    width: 350px;
+    height: 350px;
+    background: blue;
+    color: white;
+    margin: auto auto;
 }
